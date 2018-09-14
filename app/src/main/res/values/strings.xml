@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">HW2_Group32</string>
+    <string name="task_title">Task Title</string>
+    <string name="task_date">Task Date</string>
+    <string name="task_time">Task Time</string>
+    <string name="task_priority">Task Priority</string>
+    <string name="task">Task</string>
+    <string name="tvnum" />
+    <string name="tvof">Of</string>
+    <string name="tvnum2" />
+    <string name="date" />
+    <string name="etdate" />
+    <string name="ettime" />
+    <string name="rbhigh">High</string>
+    <string name="rbmedium">Medium</string>
+    <string name="rblow">Low</string>
+    <string name="tvpriority">Priority</string>
+    <string name="tvspririty">Priority</string>
+    <string name="textview">Priority:</string>
+</resources>

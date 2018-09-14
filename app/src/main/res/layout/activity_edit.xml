@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.spandananakkireddy.hw2_group32.EditActivity">
+
+    <EditText
+        android:id="@+id/ettitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/ettime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etdate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Date"
+        android:focusable="false"
+        android:inputType="date"
+        android:text="@string/etdate"
+        app:layout_constraintBottom_toTopOf="@+id/ettime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ettitle"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <EditText
+        android:id="@+id/ettime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="336dp"
+        android:ems="10"
+        android:hint="Time"
+        android:focusable="false"
+        android:inputType="time"
+        android:text="@string/ettime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgpriority"
+        android:layout_width="206dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.134">
+
+        <RadioButton
+            android:id="@+id/rbhigh"
+            android:layout_width="133dp"
+            android:layout_height="7dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:text="@string/rbhigh"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/rgpriority"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <RadioButton
+            android:id="@+id/rbmedium"
+            android:layout_width="134dp"
+            android:layout_height="4dp"
+            android:layout_weight="1"
+            android:text="@string/rbmedium"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rblow"
+            android:layout_width="138dp"
+            android:layout_height="16dp"
+            android:layout_weight="1"
+            android:text="@string/rblow"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/tvpriority"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ettime" />
+
+</android.support.constraint.ConstraintLayout>
